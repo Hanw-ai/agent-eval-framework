@@ -1,0 +1,5 @@
+{"id":"task_001","prompt":"Write a Python function that returns the nth Fibonacci number.","expected":"Correct Fibonacci implementation","category":"coding"}
+
+{"id":"task_002","prompt":"Write SQL to find the top 5 customers by purchase amount.","expected":"Valid SQL query","category":"sql"}
+
+{"id":"task_003","prompt":"Fix a division-by-zero bug in Python.","expected":"Handles zero division safely","category":"debugging"}
