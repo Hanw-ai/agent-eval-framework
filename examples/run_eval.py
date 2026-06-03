@@ -1,24 +1,37 @@
 from agent_eval.runner import BenchmarkRunner
+from agent_eval.judge import SimpleJudge
 
 
 runner = BenchmarkRunner(
     "benchmarks/coding_tasks.jsonl"
 )
 
+judge = SimpleJudge()
+
 tasks = runner.load_tasks()
 
 print(
-    f"Loaded {len(tasks)} benchmark tasks"
+    f"Loaded {len(tasks)} benchmark tasks\n"
 )
 
 for task in tasks:
+
+    answer = "sample agent answer"
+
+    result = judge.score(answer)
 
     print(
         f"Task: {task['id']}"
     )
 
     print(
-        f"Prompt: {task['prompt']}"
+        f"Score: {result['score']}"
     )
 
-    print("-" * 40)
+    print(
+        f"Failure Category: {result['failure_category']}"
+    )
+
+    print(
+        "-" * 40
+    )
