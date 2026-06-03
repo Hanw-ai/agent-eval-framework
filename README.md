@@ -78,6 +78,27 @@ tasks = runner.load_tasks()
 print(tasks)
 ```
 
+## Example Output
+
+```text
+Loaded 3 benchmark tasks
+
+Task: task_001
+Score: 1
+Failure Category: success
+----------------------------------------
+
+Task: task_002
+Score: 1
+Failure Category: success
+----------------------------------------
+
+Task: task_003
+Score: 1
+Failure Category: success
+----------------------------------------
+```
+
 ## Project Structure
 
 ```text
