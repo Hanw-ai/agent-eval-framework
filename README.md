@@ -47,6 +47,7 @@ Evaluation Report
 - Rule-based evaluation for fast regression testing
 - GPT-based judge for semantic answer evaluation
 - Failure categorization and reliability analysis
+- Semantic evaluation using GPT-based judges
 
 ### Agent Analysis
 
@@ -56,9 +57,9 @@ Evaluation Report
 
 ### Benchmarking
 
-- Coding benchmark runner
-- Structured benchmark datasets
-- Automated evaluation reports
+- Coding benchmark dataset
+- Benchmark runner for agent evaluation
+- Automated evaluation report generation
 
 ### Benchmark Runner
 
