@@ -38,6 +38,23 @@ Evaluation Report
 ---
 
 ## Features
+### Evaluation
+
+- Rule-based evaluation for fast regression testing
+- GPT-based judge for semantic answer evaluation
+- Failure categorization and reliability analysis
+
+### Agent Analysis
+
+- Agent trajectory inspection
+- Tool-use behavior analysis
+- Failure stage identification
+
+### Benchmarking
+
+- Coding benchmark runner
+- Structured benchmark datasets
+- Automated evaluation reports
 
 ### Benchmark Runner
 
