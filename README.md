@@ -38,6 +38,10 @@ Evaluation Report
 ---
 
 ## Features
+### CI/CD
+
+- Automated evaluation workflow with GitHub Actions
+- Continuous benchmark execution on every commit
 ### Evaluation
 
 - Rule-based evaluation for fast regression testing
