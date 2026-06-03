@@ -128,6 +128,31 @@ Failure Category: success
   }
 ]
 ```
+## Generated Report
+
+The evaluation pipeline automatically writes results to:
+
+```text
+reports/evaluation_report.json
+```
+
+Example:
+
+```json
+[
+  {
+    "task_id": "task_001",
+    "score": 1,
+    "failure_category": "success"
+  },
+  {
+    "task_id": "task_002",
+    "score": 1,
+    "failure_category": "success"
+  }
+]
+```
+
 
 ## Project Structure
 
