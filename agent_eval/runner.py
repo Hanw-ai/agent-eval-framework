@@ -1,37 +1,23 @@
-from agent_eval.runner import BenchmarkRunner
-from agent_eval.judge import SimpleJudge
+import json
 
 
-runner = BenchmarkRunner(
-    "benchmarks/coding_tasks.jsonl"
-)
+class BenchmarkRunner:
 
-judge = SimpleJudge()
+    def __init__(self, benchmark_path):
+        self.benchmark_path = benchmark_path
 
-tasks = runner.load_tasks()
+    def load_tasks(self):
 
-print(
-    f"Loaded {len(tasks)} benchmark tasks\n"
-)
+        tasks = []
 
-for task in tasks:
+        with open(self.benchmark_path) as f:
 
-    answer = "sample agent answer"
+            for line in f:
 
-    result = judge.score(answer)
+                if line.strip():
 
-    print(
-        f"Task: {task['id']}"
-    )
+                    tasks.append(
+                        json.loads(line)
+                    )
 
-    print(
-        f"Score: {result['score']}"
-    )
-
-    print(
-        f"Failure Category: {result['failure_category']}"
-    )
-
-    print(
-        "-" * 40
-    )
+        return tasks
