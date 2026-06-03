@@ -99,6 +99,19 @@ Failure Category: success
 ----------------------------------------
 ```
 
+## Sample Evaluation Report
+
+```json
+[
+  {
+    "task_id": "task_001",
+    "score": 1,
+    "success": true,
+    "failure_category": "success"
+  }
+]
+```
+
 ## Project Structure
 
 ```text
@@ -106,14 +119,18 @@ agent_eval/
 ├── schema.py
 ├── failures.py
 ├── judge.py
-└── runner.py
+├── runner.py
+└── trajectory_analysis.py
 
 benchmarks/
 └── coding_tasks.jsonl
 
 examples/
-└── run_eval.py
-```
+├── run_eval.py
+└── simple_agent.py
+
+reports/
+└── evaluation_report.json
 
 ## Current Status
 
