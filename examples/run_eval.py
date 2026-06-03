@@ -1,6 +1,6 @@
 from agent_eval.runner import BenchmarkRunner
 from agent_eval.judge import SimpleJudge
-
+from examples.simple_agent import simple_agent
 
 runner = BenchmarkRunner(
     "benchmarks/coding_tasks.jsonl"
@@ -16,7 +16,7 @@ print(
 
 for task in tasks:
 
-    answer = "sample agent answer"
+    answer = simple_agent(task["prompt"])
 
     result = judge.score(answer)
 
