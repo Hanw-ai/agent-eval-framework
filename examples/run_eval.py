@@ -1,6 +1,7 @@
 from agent_eval.runner import BenchmarkRunner
 from agent_eval.judge import SimpleJudge
 from examples.simple_agent import simple_agent
+import json
 
 runner = BenchmarkRunner(
     "benchmarks/coding_tasks.jsonl"
@@ -35,3 +36,20 @@ for task in tasks:
     print(
         "-" * 40
     )
+   
+
+with open(
+    "reports/evaluation_report.json",
+    "w"
+) as f:
+
+    json.dump(
+        results,
+        f,
+        indent=2
+    )
+
+print(
+    "Evaluation report saved."
+)
+    
