@@ -1,0 +1,20 @@
+[
+  {
+    "task_id": "task_001",
+    "score": 1,
+    "success": true,
+    "failure_category": "success"
+  },
+  {
+    "task_id": "task_002",
+    "score": 1,
+    "success": true,
+    "failure_category": "success"
+  },
+  {
+    "task_id": "task_003",
+    "score": 1,
+    "success": true,
+    "failure_category": "success"
+  }
+]
