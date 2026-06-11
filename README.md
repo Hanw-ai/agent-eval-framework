@@ -224,3 +224,16 @@ Potential extensions include:
 - Human + LLM hybrid evaluation
 
 This project explores the infrastructure needed to support those workflows.
+
+## Judge Agreement Analysis
+
+Compares:
+
+- Rule-Based Judge
+- GPT-Based Judge
+
+Reports:
+
+- Agreement Rate
+- Disagreement Cases
+- Evaluator Reliability
