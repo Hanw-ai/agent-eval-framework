@@ -16,5 +16,13 @@ def calculate_agreement(results):
             agree += 1
 
     return {
-        "agreement_rate": agree / total
+    "total_tasks": total,
+    "agreements": agree,
+    "disagreements": total - agree,
+    "agreement_rate": agree / total
+}
+    
+if total == 0:
+    return {
+        "agreement_rate": 0
     }
