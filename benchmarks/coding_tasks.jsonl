@@ -1,5 +1,27 @@
-{"id":"task_001","prompt":"Write a Python function that returns the nth Fibonacci number.","expected":"Correct Fibonacci implementation","category":"coding"}
+{"task_id":"coding_001","category":"coding","difficulty":"easy","prompt":"Write a Python function that returns the nth Fibonacci number.","reference_answer":"Iterative Fibonacci implementation.","failure_modes":["incorrect_reasoning"]}
 
-{"id":"task_002","prompt":"Write SQL to find the top 5 customers by purchase amount.","expected":"Valid SQL query","category":"sql"}
+{"task_id":"coding_002","category":"coding","difficulty":"easy","prompt":"Reverse a singly linked list.","reference_answer":"Iterative linked list reversal.","failure_modes":["incorrect_reasoning"]}
 
-{"id":"task_003","prompt":"Fix a division-by-zero bug in Python.","expected":"Handles zero division safely","category":"debugging"}
+{"task_id":"coding_003","category":"coding","difficulty":"medium","prompt":"Check whether a string contains balanced parentheses.","reference_answer":"Use stack-based validation.","failure_modes":["incorrect_reasoning"]}
+
+{"task_id":"coding_004","category":"coding","difficulty":"medium","prompt":"Implement binary search on a sorted array.","reference_answer":"Binary search with O(log n) complexity.","failure_modes":["incorrect_reasoning"]}
+
+{"task_id":"coding_005","category":"coding","difficulty":"hard","prompt":"Implement an LRU cache supporting get and put operations.","reference_answer":"Hash map + doubly linked list.","failure_modes":["incorrect_reasoning","incomplete_task"]}
+
+{"task_id":"bugfix_001","category":"bug_fix","difficulty":"easy","prompt":"Fix a division-by-zero bug in a Python function.","reference_answer":"Check denominator before division.","failure_modes":["incorrect_reasoning"]}
+
+{"task_id":"bugfix_002","category":"bug_fix","difficulty":"easy","prompt":"Fix a function that crashes when given an empty list.","reference_answer":"Handle empty input safely.","failure_modes":["incorrect_reasoning","incomplete_task"]}
+
+{"task_id":"bugfix_003","category":"bug_fix","difficulty":"medium","prompt":"Fix the off-by-one bug in a loop.","reference_answer":"Use range(n+1) where appropriate.","failure_modes":["incorrect_reasoning","incomplete_task"]}
+
+{"task_id":"sql_001","category":"sql","difficulty":"easy","prompt":"Write SQL to find the top 5 customers by purchase amount.","reference_answer":"GROUP BY customer_id ORDER BY SUM(amount) DESC LIMIT 5.","failure_modes":["incorrect_reasoning","format_error"]}
+
+{"task_id":"sql_002","category":"sql","difficulty":"medium","prompt":"Write SQL to compute rolling 7-day average sales.","reference_answer":"Window function with ROWS BETWEEN clause.","failure_modes":["incorrect_reasoning"]}
+
+{"task_id":"tool_001","category":"tool_use","difficulty":"medium","prompt":"Read the README file before answering the question.","reference_answer":"Must inspect README first.","failure_modes":["tool_misuse","hallucinated_action"]}
+
+{"task_id":"tool_002","category":"tool_use","difficulty":"medium","prompt":"Run tests before proposing a code fix.","reference_answer":"Execute tests then suggest patch.","failure_modes":["tool_misuse","hallucinated_action"]}
+
+{"task_id":"repo_001","category":"repo_reasoning","difficulty":"hard","prompt":"Locate the module responsible for a failing API endpoint.","reference_answer":"Identify correct module and explain reasoning.","failure_modes":["context_loss","incorrect_reasoning"]}
+
+{"task_id":"repo_002","category":"repo_reasoning","difficulty":"hard","prompt":"Trace an error from logs to source code and suggest a fix.","reference_answer":"Use logs to locate bug and propose patch.","failure_modes":["incorrect_reasoning","incomplete_task"]}
