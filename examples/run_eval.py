@@ -1,3 +1,14 @@
+import os
+import sys
+
+sys.path.append(
+    os.path.dirname(
+        os.path.dirname(
+            os.path.abspath(__file__)
+        )
+    )
+)
+
 from agent_eval.runner import BenchmarkRunner
 from agent_eval.judge import SimpleJudge
 from examples.simple_agent import simple_agent
