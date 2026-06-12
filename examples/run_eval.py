@@ -21,7 +21,7 @@ runner = BenchmarkRunner(
 judge = SimpleJudge()
 
 tasks = runner.load_tasks()
-
+results = []
 print(
     f"Loaded {len(tasks)} benchmark tasks\n"
 )
@@ -32,9 +32,17 @@ for task in tasks:
 
     result = judge.score(answer)
 
+    results.append(
+    {
+        "task_id": task["task_id"],
+        "category": task["category"],
+        "score": result["score"],
+        "failure_category": result["failure_category"]
+    }
+)
     print(
-        f"Task: {task['task_id']}")
-    )
+    f"Task: {task['task_id']}"
+)
 
     print(
         f"Score: {result['score']}"
