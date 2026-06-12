@@ -33,7 +33,7 @@ for task in tasks:
     result = judge.score(answer)
 
     print(
-        f"Task: {task['id']}"
+        f"Task: {task['task_id']}")
     )
 
     print(
