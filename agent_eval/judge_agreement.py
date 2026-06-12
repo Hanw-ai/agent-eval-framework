@@ -1,5 +1,3 @@
-import json
-
 def calculate_agreement(results):
 
     total = 0
@@ -15,14 +13,17 @@ def calculate_agreement(results):
         if (rule_score > 0.5) == (llm_score > 0.5):
             agree += 1
 
+    if total == 0:
+        return {
+            "total_tasks": 0,
+            "agreements": 0,
+            "disagreements": 0,
+            "agreement_rate": 0
+        }
+
     return {
-    "total_tasks": total,
-    "agreements": agree,
-    "disagreements": total - agree,
-    "agreement_rate": agree / total
-}
-    
-if total == 0:
-    return {
-        "agreement_rate": 0
+        "total_tasks": total,
+        "agreements": agree,
+        "disagreements": total - agree,
+        "agreement_rate": agree / total
     }
